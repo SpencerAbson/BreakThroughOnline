@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+# constants that both client and server will rely upon to communicate
+
+
+PACKET_SIZE = 32
+ENCODING_STD = "utf-8"
+CLIENT_LOBBY_REQUEST = 0
+CLIENT_STATS_REQUEST = 1
+CLIENT_SDATA_REQUEST = 2
+PAYLOAD_WIDTH = 3
+CLIENT_PS_SEND = 4
+HEADER_SIZE = 5
+SERVER_PS_REQUEST = 6
+SERVER_SEND_PICKLE = 9
+CLIENT_LOST_GAME = 7
+CLIENT_WON_GAME = 10
+SERVER_START_GAME = 8
