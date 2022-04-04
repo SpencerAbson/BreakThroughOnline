@@ -52,10 +52,7 @@ class ClientSession(GameSession):
         self._client.connected.wait()
         self._client.requestData(CLIENT_SDATA_REQUEST)
         self._client.recvdObjFromServer.wait()
-
-        print("obj" + str(self._client._objFromServer))
         self._client.gameStarted.wait()
-        print("fuck it started!")
 
     def getStartingData(self) -> {}:
         #assert("HAND" in self._client._ObjFromServer.keys() and "DECK" in self._client._ObjFromServer.keys())
